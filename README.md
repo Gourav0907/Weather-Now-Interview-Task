@@ -68,3 +68,7 @@ This section has moved here: [https://vitejs.dev/guide/build.html](https://vitej
 ### Troubleshooting
 
 This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+
+Weather Forecasting Web Application developed using Open.meteo API for the hourly results.
+Used Netlify for the site deployment
+Used the Gelocation API for the cities all over the globe to get the accurate results
