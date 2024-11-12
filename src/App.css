@@ -1,31 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap');
+
+/* App Container */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #5f7b8a, #8f9baf);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  color: #fff;
+  padding-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header */
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.heart {
-  color: #ff0000;
+.App-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  margin: 0;
 }
 
-.small {
-  font-size: 0.75rem;
+/* Weather Container */
+.weather-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* City Input */
+.city-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.city-input:focus {
+  border: 2px solid #3949ab;
+}
+
+/* Weather Button */
+.weather-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #3949ab;
+  color: #fff;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weather-btn:hover {
+  background-color: #283593;
+  transform: scale(1.05);
+}
+
+/* Loading and Error States */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+.error {
+  color: #e53935;
+}
+
+/* Weather Card */
+.weather-info-card,
+.hourly-weather-card,
+.climate-change-card,
+.air-quality-card {
+  margin-bottom: 20px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-info-card:hover,
+.climate-change-card:hover,
+.air-quality-card:hover {
+  transform: scale(1.05);
+}
+
+.weather-info-card h2,
+.hourly-weather-card h2,
+.climate-change-card h2,
+.air-quality-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffcc00;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.weather-info-card p,
+.hourly-weather-card ul,
+.climate-change-card ul,
+.air-quality-card ul {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.hourly-weather-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hourly-weather-card li {
+  margin: 12px 0;
+}
+
+.climate-change-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.climate-change-card li {
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Toggle Buttons */
+.toggle-btn {
+  background-color: #3949ab;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+
+.toggle-btn:hover {
+  background-color: #283593;
+  transform: scale(1.05);
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+/* Hover effects for weather data items */
+.weather-info-card p {
+  transition: transform 0.3s ease;
+}
+
+.weather-info-card p:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for section headers */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
