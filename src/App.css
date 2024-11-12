@@ -44,7 +44,6 @@
 /* City Input */
 .city-input {
   width: 100%;
-  padding: 12px;
   margin-bottom: 20px;
   border: none;
   border-radius: 10px;
@@ -62,6 +61,7 @@
 /* Weather Button */
 .weather-btn {
   width: 100%;
+  margin-bottom: 14px;
   padding: 14px;
   background-color: #3949ab;
   color: #fff;
@@ -96,6 +96,7 @@
 .hourly-weather-card,
 .climate-change-card,
 .air-quality-card {
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 25px;
   background-color: rgba(0, 0, 0, 0.7);
